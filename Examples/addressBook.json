@@ -1,0 +1,20 @@
+{
+    "Address-Book": [
+        {
+            "ID":"OO1",
+            "First-Name":"Amar",
+            "Last-Name":"Singn",
+            "Age":52,
+            "Address":["21","Street 10","New Delhi","110001"],
+            "checked":true
+        },
+        {
+            "ID":"OO2",
+            "First-Name":"Anthony",
+            "Last-Name":"Maria",
+            "Age":44,
+            "Address":["22","Street 10","New Delhi","110001"],
+            "checked":false
+        }
+    ]
+}

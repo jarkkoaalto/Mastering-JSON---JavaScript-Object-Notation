@@ -1,0 +1,15 @@
+{
+    "ID":1,
+    "W1":"Hello",
+    "W2":"World !",
+    "Continents":[
+        "North America",
+        "South America",
+        "Europe",
+        "Asia",
+        "South Africa",
+        "Australia",
+        "North Pole",
+        "South Pole"
+    ]
+}
