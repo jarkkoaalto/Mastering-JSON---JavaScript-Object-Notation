@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    function loadJSONDoc()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function()
+        {
+            if(xmlhttp.status == 200 && xmlhttp.readyState==4)
+            {
+                var jo = JSON.parse(xmlhttp.responseText);
+                document.getElementById("AA").innerHTML = PrepareData(jo);
+            }
+        }
+
+        xmlhttp.open("GET","nobel.json",true);
+        xmlhttp.send();
+    }
+    function PrepareData(jo)
+    {
+        return (jo.year+":"+jo.price+"<br />"+jo.winner[0]+", "+jo.winner[1]);
+    }
+    </script>
+</head>
+<body>
+    <div id="myDiv"><h2>AJAX </h2><br />
+    <button type="button" onclick="loadJSONDoc()">Load new Content Asyncronously</button>
+    <br />
+    <h2 id="AA">Content before Press of Button</h2>
+</div>
+    
+</body>
+</html>

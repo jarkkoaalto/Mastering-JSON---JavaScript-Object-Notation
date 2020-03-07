@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS eval() vs. JSON.parse</title>
+
+    <script>
+        var v1='{"Item":"Pencil", "Sale":2, "Price":5.5}';
+
+        // Using eval function
+        //var jsobj = eval("("+v1+")"); // Eval method
+        // Using parse method of JSON class
+        var jsobj = JSON.parse(v1); // Parse method
+        document.write(jsobj.Item+"<br />");
+        document.write(jsobj.Sale+"<br />");
+        document.write(jsobj.Price+"<br />");
+        document.write("Amount Collected:" + jsobj.Price*jsobj.Sale+"<br />");
+
+        // JSON Stringfy usage
+        document.write(JSON.stringify(JSON.parse(v1)));
+
+    </script>
+</head>
+<body>
+</body>
+</html>

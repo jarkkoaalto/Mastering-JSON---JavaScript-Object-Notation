@@ -147,3 +147,32 @@ What is an Open Data Format
 4. White spaces in string value as literals
 
 
+## Json Schema Highlights ##
+
+- Follows JSON Stucture only
+- Support think like: data type, data value enumeration, Providing default value of data, Data size restrictions, Data Description, Data required check, Url to pick scheme location
+
+## Basics Issues ##
+
+- No support for comments
+- No support for date type
+- Scheme presence ot identifiable
+- Difficult related to cdata
+
+## Other critical issues ##
+- security left to users
+- no license
+- Query syntax not standarfized
+
+## Reference Links Sheet ##
+
+- IETF Document for JSON Standard https://tools.ietf.org/html/rfc7159
+- ECMA Document for JSON (ECMA – 404 , 1st Edition, October 2013) http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf
+- A popular JSON reference http://www.json.org/
+- JSON Wikipedia Page https://en.wikipedia.org/wiki/JSON
+- JSON Tutorial as W3Schools http://www.w3schools.com/json/
+- A Popular JSON Validator http://jsonlint.com/
+- An Online JSON Editor http://www.jsoneditoronline.org/
+- JSON Schema Generation Tool http://jsonschema.net/#/
+- JSON Beautification and Viewer Tools http://codebeautify.org/jsonviewer
+- JSON to XML Conversion tool http://www.freeformatter.com/json-to-xml-converter.html
